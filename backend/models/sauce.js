@@ -1,7 +1,10 @@
+///////////////////////////////MODELE SAUCE//////////////////////////
+
 const mongoose = require('mongoose');
 
-//création du schéma strict 
+//création du schéma strict Sauce
 const sauceSchema = mongoose.Schema({
+  userId: {type: String, required: true},
   name: {type: String, required: true},
   manufacturer: {type: String, required: true},
   description: { type: String, required: true },

@@ -1,7 +1,9 @@
+//////////////////////SERVEUR///////////////////////////////////
+
 const http = require('http'); //importation package http de Node
 const app = require('./app'); //importation du fichier app.js
 
-//Renvoit un port valide sous forme de chaine ou de numéro
+//renvoit un port valide sous forme de chaine ou de numéro
 const normalizePort = val => {
   const port = parseInt(val, 10);
 
