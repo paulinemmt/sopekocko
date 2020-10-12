@@ -1,6 +1,7 @@
 //////////////////////////////APPLICATION/////////////////////////////////
 
 const express = require('express'); //ajout du framework express au projet
+const helmet = require("helmet"); //sécurisation de l'app en ajoutant divers en-tête http
 const bodyParser = require('body-parser'); //ajout de body-parser au projet : permet extraction d'objet JSON
 const mongoose = require('mongoose'); //ajout de mongoose au projet : gestion de la DB
 
@@ -28,7 +29,10 @@ app.use((req, res, next) => {
     next();
 });
 
-//middleware global :JSON
+//sécurisation de l'application
+app.use(helmet());
+
+//middleware global : JSON
 app.use(bodyParser.json());
 
 //routes
