@@ -17,14 +17,14 @@ Installation du backend
 2. Initialisation du projet : `npm init`
 3. Lancer le serveur : `node server`
 4. Package à installer avec `npm install` :
-    *express
-    *body-parser
-    *fs
-    *bcrypt
-    *jsonwebtoken
-    *multer
-    *mongoose
-    *mongoose-unique-validator
-    *path
-    *helmet
-    *http
+    * express
+    * body-parser
+    * fs
+    * bcrypt
+    * jsonwebtoken
+    * multer
+    * mongoose
+    * mongoose-unique-validator
+    * path
+    * helmet
+    * http
